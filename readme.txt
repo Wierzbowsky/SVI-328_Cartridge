@@ -1,14 +1,10 @@
 ------------------------------------------------
-SVI-328 Multi-Game Cartridge V1
+SVI-328 Multi-Game Cartridge V1 & V2
 Copyright (C) Kamil Karimov (Caro)
 http://caro.su
 ------------------------------------------------
 
-WARNING!
-The cartridge is inserted with its component side facing outwards! Check the "inserted.jpg"
-file to see the proper way of inserting the cartridge.
-
-The multi-game cartridge was designed by the Russian hardware developer Kamil Karimov.
+The multi-game cartridges were designed by the Russian hardware developer Kamil Karimov.
 The project is open-source, but the commercial usage is not allowed. A brief description
 of the project can be found here:
 
