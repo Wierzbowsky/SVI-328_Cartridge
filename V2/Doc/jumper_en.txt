@@ -1,0 +1,54 @@
+------------------------------------------------
+SVI-328 Multi-Game Cartridge V2
+Copyright (C) Kamil Karimov (Caro)
+http://caro.su
+------------------------------------------------
+
+Jumper Configuration
+--------------------
+
+The games in the cartridge are selectable by specific jumpers. See the below table.
+
++------+---------+
+| ROM  |         |
++------+---------+
+|      |   A13*  |
+| A13  |         |
+|      |  /CCS1  |
++------+---------+
+|      |  /CCS1  |
+| A14  |         |
+|      |   '0'   |
++------+---------+
+|      |   '0'   |
+| A15  |         |
+|      |   '1'   |
++------+---------+
+
+This table contains the signals on the jumper pins.
+
+A15:
+Switches 32kb ROM pages.
+A jumper is set only when using a 64kb ROM, for example 27C512. Setting to "0" or "1"
+enables the selection of upper and lower part of ROM's memory.
+When installing 27Ñ256, A15 can be ignored because R2 already selects "1" on pin 1 of
+ROM and that is enough for proper ROM functioning.
+
+A14:
+Switches 16kb ROM pages.
+For 32kb games it must be set on /CCS1, that selects the necessary ROM page or to "0"
+(addresses 0000h...3FFFh) or to "1" (addresses 4000h...7FFFh).
+At the same time the jumper in A13 must be set so to A13* to supply this signal to ROM
+from the processor.
+
+A13:
+Switches 8kb ROM pages.
+There are games that are less than 16kb in size. You can write 2 of those games into the
+27C256 ROM. The A13 must be set to /CCS1 (0 selects lower bank, 1 - upper bank). The A14
+should be set to "0" or just left empty that automatically sets it to "1".
+
+For example:
+A 32kb game in 27C256 requires the following jumper configuration:
+
+A13:	A13*
+A14:	/CCS1 

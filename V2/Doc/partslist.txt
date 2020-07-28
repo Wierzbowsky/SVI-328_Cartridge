@@ -1,0 +1,19 @@
+------------------------------------------------
+SVI-328 Multi-Game Cartridge V2
+Copyright (C) Kamil Karimov (Caro)
+http://caro.su
+------------------------------------------------
+
+Partslist
+---------
+
+DD1: 27C256, 27C512 or W27C512 in DIP casing
+
+DD2: 74HC08 or 74LS08 in DIP or SOIC casing
+
+3x SMD resistors 2 kOhm, size 0805
+
+1x SMD ceramic capacitor 0.1 uF (100 nF), size 0805
+
+1x LED of any color
+
