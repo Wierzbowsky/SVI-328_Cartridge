@@ -10,7 +10,7 @@ of the project can be found here:
 
 http://rbsc.su/en/other_projects/#0110_Spectravideo%20Cartridge
 
-The converted games and source files can be downloaded from this Russian forum:
+The converted MSX1 games can be downloaded from this Russian forum:
 
 https://zx-pk.ru/threads/24147-spectravideo-cartridge/
 
